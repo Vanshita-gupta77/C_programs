@@ -1,0 +1,18 @@
+Program
+// A program to read two integers , one real number, one character and print them
+#include <stdio.h>
+
+int main() {
+    int a,b;
+    float c;
+    char d;
+    printf("enter two integers here\n");
+    scanf("%d %d",&a,&b);
+    printf("enter a real number here\n");
+    scanf("%f",&c);
+    printf("enter a character here\n");
+    scanf("%c",&d);
+    printf("Two integers are %d ,%d \n", a,b);
+    printf("Real number is %f \n",c);
+    printf("Character is %c \n",d);
+}
