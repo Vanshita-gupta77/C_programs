@@ -1,0 +1,10 @@
+// A program to read a character without using scanf function and display the same without using printf function.
+#include <stdio.h>
+int main()
+{
+   char ch[10];
+   puts("Enter the character\n");
+   gets(ch);
+   puts(ch);
+   return 0;
+}
