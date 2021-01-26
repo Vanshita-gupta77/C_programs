@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() 
+{
+   int amount,rs_100,rs_50,rs_10,rs_5,rs_2,rs_1,total;
+   printf("Enter the amount here\n");
+   scanf("%d",&amount);
+   rs_100=amount/100;
+   amount=amount%100;
+   rs_50=amount/50;
+   amount=amount%50;
+   rs_10=amount/10;
+   amount=amount%10;
+   rs_5=amount/5;
+   amount=amount%5;
+   rs_2=amount/2;
+   amount=amount%2;
+   rs_1=amount/1;
+   amount=amount%1;
+   total=rs_100+rs_50+rs_10+rs_5+rs_2+rs_1;
+   printf("Total smallest number of notes is %d",total);
+}
