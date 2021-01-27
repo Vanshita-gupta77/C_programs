@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+    int ang1,ang2,ang3,total;
+    printf("Enter the angles of triangle\n");
+    scanf("%d %d %d",&ang1,&ang2,&ang3);
+    total=ang1+ang2+ang3;
+    if(total==180)
+    {
+        printf("Valid triangle");
+    }
+    else
+    {
+        printf("Not a valid triangle");
+    }
+    return 0;
+}
