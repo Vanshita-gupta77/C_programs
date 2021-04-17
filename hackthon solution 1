@@ -1,0 +1,39 @@
+\\Prime numbers are numbers that have only 2 factors. Similarly, Armstrong number is a number that is equal to the sum of nth power of the digits of a n-bit number.
+
+\\Example: Armstrong Number 153 = 13 + 53 + 33 = 1+125+27
+
+\\We have to verify that the given number should be both prime & armstrong. If a number satisfy the basic definition of both print “Y” else print ”N” in the output.
+
+
+
+
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num,rem,onum,result=0,i=0,flag=0;
+    scanf("%d",&num);
+    onum=num;
+    while(onum!=0)
+    {
+        rem=onum%10;
+        result=rem*rem*rem*rem;
+        onum /=10;
+    }
+    for(i=2;i<num/2;i++){
+        if( num % i == 0)
+           flag=1;
+           break;
+    }
+    if(result==num && flag==0)
+    {
+        printf("Y");
+    }
+    else
+    {
+        printf("N");
+    }
+    return 0;
+}
